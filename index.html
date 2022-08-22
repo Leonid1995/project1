@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Авто салон</title>
+</head>
+<body>
+
+    <article>
+        <div class="container">
+                <div class="form-group">
+                    <label for="brand">Марка</label>
+                    <input required class="form-control" type="text" id="brand" />
+                    <label for="model">Модель</label>
+                    <input required class="form-control" type="text" id="model"/>
+                    <label for="fuel">Тип топлива</label>
+                    <input required class="form-control" type="text" id="fuel"/>
+                    <label for="year">Год</label>
+                    <input required class="form-control" type="number" id="year" min="2000" max="2022"/>
+                    <label for="type">Тип кузова</label>
+                    <input required class="form-control" type="text" id="type"/>
+                    <label for="price">Цена</label>
+                    <input required class="form-control" type="number" id="price" min="5000"/>
+                </div>
+
+                <input type="button" class="btn btn-primary" value="Добавить автомобиль" onclick="writeCar();" />
+                <input type="button" class="btn btn-success" value="Очистить" onclick="clearText();" />
+
+            </form>
+        </div>
+    </article>
+    <div>
+        <table id="table" class="table">
+                    <thead>
+                <tr>
+                    <th scope="col">Марка</th>
+                    <th scope="col">Модель</th>
+                    <th scope="col">Тип топлива</th>
+                    <th scope="col">Год</th>
+                    <th scope="col">Тип кузова</th>
+                    <th scope="col">Цена</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                
+                </tr>
+            </tbody>
+        </table>
+    <span id="errorBrand"></span>
+    <span id="errorModel"></span>
+    <span id="errorFuel"></span>
+    <span id="errorYear"></span>
+    <span id="errorType"></span>
+    <span id="errorPrice"></span>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
